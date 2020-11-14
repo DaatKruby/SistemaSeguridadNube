@@ -1,3 +1,5 @@
+//modelo de la coleccion que usaremos, si quieres añadir o modificar algo nomas sigue el patrón.
+//(Esto es lo que se guarda cuando alguien hace un post a nuestro server..)
 const {Schema, model} = require('mongoose');
 
 const infoSensor = new Schema({
@@ -5,11 +7,11 @@ const infoSensor = new Schema({
         type: String
     },
     movimiento: {
-        type: Boolean,
+        type: Number,
         default: false
     },
     sonido: {
-        type: Boolean,
+        type: Number,
         default: false
     },
     fecha: {
