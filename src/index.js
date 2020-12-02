@@ -33,12 +33,3 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.listen(app.get('port'), () => {
   console.log(`Servidor en el puerto ${app.get('port')}`);
 });
-
-
-/*
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-*/
