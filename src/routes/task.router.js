@@ -2,7 +2,6 @@ const express = require('express');const router = express.Router();
 
 const Sensor = require('../models/infosensor');
 
-// const {isActividad} = require('../helper.js');
 
 router.get('/', async(req, res) => {
     const sensorInfo = await Sensor.find(); 
