@@ -7,11 +7,14 @@ function obtenerClusters(fecha1, fecha2, callback) {
     modelSensor.find(filtro, {}, function (err, sensores) {
         if (err == null) {
             sensoresArr = jsonToArrayCluster(sensores);
-            modelo = getModelo(sensoresArr, 2);
-            var json = getResultadoJSON(modelo, sensores);
-            callback(json);
-            
-        } else{
+            if (sensoresArr.length === 0) {
+                callback(null);
+            } else {
+                modelo = getModelo(sensoresArr, 2);
+                var json = getResultadoJSON(modelo, sensores);
+                callback(json);
+            }
+        } else {
             console.log(err);
             callback(null);
         }
