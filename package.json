@@ -14,6 +14,7 @@
     "mongoose": "^5.10.11",
     "morgan": "^1.10.0",
     "nodemailer": "^6.4.16",
+    "regression": "^2.0.1",
     "skmeans": "^0.11.3"
   },
   "devDependencies": {
