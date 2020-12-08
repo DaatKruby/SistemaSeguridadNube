@@ -8,7 +8,7 @@ const port = '27017';
 const nombre_bd = "sistemaseguridad";
 
 
-const URI = `mongodb://localhost/${nombre_bd}`;
+//const URI = `mongodb://localhost/${nombre_bd}`;
 
 
 const URL = `mongodb://${host}:${port}/${nombre_bd}`;
