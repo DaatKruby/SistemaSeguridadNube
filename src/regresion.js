@@ -12,8 +12,6 @@ function getTablaRegresion(fecha1, fecha2, callback) {
         } else {
             console.log(err);
             callback(null);
-            
-            
         }
     });
 }
